@@ -1,0 +1,149 @@
+
+img{
+    clip-path:ellipse(33% 50%);
+    align-self: right;
+    
+}
+
+ img{
+    width: 80px;
+    height: 80px;
+    background-color: #5c2d14;
+    position: fixed;
+    bottom: 100px;
+    right: 18px;
+    top: 20px;
+  }
+
+  
+
+label,input{
+    display: table-cell;
+    margin-bottom: 80px;
+    max-width: 80px;
+    max-height: 80px;
+
+
+}
+
+
+  .Tête{
+       border: 10px #f5f0ee;
+       border-radius: 10px;
+       border-style: double;
+       background-color: #5ea2ea;
+       padding: 0%;
+       display: grid;
+       -ms-flex-align: start;
+      
+  }
+
+  .corps{
+    border: 3px #0929df;
+    border-style: dashed;
+    background-color: rgb(166, 184, 239);
+    padding-left: 0%;
+    display: table;
+    position: center,left;
+    align-self: ;
+    background-size: auto;
+    left: 50%;
+    width: 740px;
+    height:400px;
+    margin-top: 0px;
+  }
+
+  .formulaire{
+    background-color: #0929df;
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    margin-top: -405px;
+    margin-bottom: 0px;
+    margin-left: 750px;
+    margin-right: 20px;
+    border-radius: 7px;
+    border-style: double;
+  
+  }
+
+  .Numero{
+    margin-top: -240px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 2px;
+
+    padding-bottom: 10px;
+  }
+
+  .naissance{
+    margin-top: -130px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 2px;
+
+    padding-bottom: 0px;
+  }
+
+  .clok{
+    margin-top: -50px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    margin-right: 2px;
+
+    padding-bottom: 0px;
+  }
+
+  .prenom{
+    margin-top: -60px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    margin-right: 2px;
+
+    padding-bottom: 0px;
+  }
+
+  .Status{
+    margin-top: -100px;
+    margin-bottom: 0px;
+    margin-left: 200px;
+    margin-right: 2px;
+
+    padding-bottom: 0px;
+  }
+
+  .validé{
+    margin-top: -100px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    margin-right: 2px;
+
+    padding-bottom: 0px;
+  }
+
+  .pied{
+     background-color: rgb(245, 248, 248);
+     background-image: -moz-radial-gradient();
+
+     border-radius: 10px;
+     border-top: 5px #0929df;
+     border-width: 10px;
+     border-left: #fff307 5px;
+     border-style: double;
+
+     text-decoration: #0929df;
+     text-transform: capitalize;
+     text-align: center;
+     text-decoration-color: #0929df;
+
+     
+     height: 200px;
+
+     margin-top: 10px;
+
+  }
+
+
+
