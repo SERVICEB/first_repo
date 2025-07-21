@@ -3,7 +3,7 @@ import axios from "axios";
 /** 🔧 Création d'une instance Axios avec baseURL depuis .env ou localhost */
 const isProduction = window.location.hostname !== 'localhost';
 const baseURL = isProduction
-  ? 'https://ema-v3-backend.onrender.com/api'
+  ? 'https://ema-v3-backend.onrender.com'
   : 'http://localhost:10000/api'; // 🔧 CORRECTION: Port 10000 au lieu de 5000
 
 console.log('=== API Configuration ===');
