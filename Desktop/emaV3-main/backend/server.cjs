@@ -17,10 +17,10 @@ const app = express();
 
 // Middlewares
 const allowedOrigins = [
-  'https://1132ddc5.emaprojet.pages.dev',
-  'https://222294b2.emaprojet.pages.dev',
+  'https://ema-v3-front.onrender.com/',
+  'https://ema-v3-front.onrender.com/',
   'http://localhost:5173',
-  /.+\.emaprojet\.pages\.dev$/ // Autoriser tous les sous-domaines de emaprojet.pages.dev
+  /.+\.ema-v3-front\.onrender\.com/ // Autoriser tous les sous-domaines de ema-v3-front.onrender.com
 ];
 
 // Configuration CORS temporairement permissive
