@@ -5,7 +5,7 @@ import axios from 'axios';
 import { jwtDecode } from 'jwt-decode';
 import './ResidenceForm.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://emaprojetbackend.onrender.com';
+const API_URL = import.meta.env.VITE_API_URL || 'https://ema-v3-backend.onrender.com';
 axios.defaults.baseURL = API_URL;
 
 const ResidenceForm = () => {
