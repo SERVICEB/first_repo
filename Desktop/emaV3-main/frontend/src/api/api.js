@@ -3,15 +3,20 @@ import axios from "axios";
 /** 🔧 Création d'une instance Axios avec baseURL depuis .env ou localhost */
 const isProduction = window.location.hostname !== 'localhost';
 const baseURL = isProduction
-  ? 'https://ema-v3-backend.onrender.com'
-  : 'http://localhost:10000/api'; // 🔧 CORRECTION: Port 10000 au lieu de 5000
+  ? 'https://ema-v3-backend.onrender.com/api'
+  : 'http://localhost:10000/api';
+
+// Fonction utilitaire pour nettoyer les URLs
+const cleanUrl = (url) => {
+  return url.replace(/([^:]\/)\/+/g, "$1"); // Supprime les doubles slashes
+}; // 🔧 CORRECTION: Port 10000 au lieu de 5000
 
 console.log('=== API Configuration ===');
 console.log('Environment:', isProduction ? 'Production' : 'Development');
 console.log('Base URL:', baseURL);
 
 const api = axios.create({
-  baseURL,
+  baseURL: cleanUrl(baseURL), // Utilisation de la fonction cleanUrl
   headers: { 
     "Content-Type": "application/json",
     "Accept": "application/json"
