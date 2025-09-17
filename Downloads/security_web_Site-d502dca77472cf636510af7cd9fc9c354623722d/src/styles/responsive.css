@@ -1,0 +1,375 @@
+/* Responsive Design System */
+/* Mobile First Approach */
+
+/* Base responsive styles */
+@media (max-width: 640px) {
+  /* Hero Section */
+  .hero-section {
+    padding-top: 80px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2;
+  }
+  
+  .hero-section .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .hero-section .text-4xl {
+    font-size: 2rem;
+  }
+  
+  .hero-section .text-3xl {
+    font-size: 1.75rem;
+  }
+  
+  .hero-section .flex-col {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-section .grid-cols-3 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Navbar */
+  .navbar .max-w-7xl {
+    padding: 0 1rem;
+  }
+  
+  .navbar .flex.items-center {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar .hidden.md\\:flex {
+    display: none;
+  }
+  
+  .navbar .md\\:hidden {
+    display: block;
+  }
+
+  /* Services Section */
+  .services .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+  
+  .services .md\\:grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .services .lg\\:grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .services .text-4xl {
+    font-size: 2.5rem;
+  }
+  
+  .services .text-xl {
+    font-size: 1rem;
+  }
+
+  /* General spacing */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .py-20 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .py-24 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .max-w-7xl {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-section h1 {
+    font-size: 3.5rem !important;
+  }
+  
+  .hero-section .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .hero-section .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .services .md\\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .services .lg\\:grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large tablet styles */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .hero-section .grid-cols-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .services .lg\\:grid-cols-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Utility classes for responsive */
+.responsive-padding {
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-padding {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-padding {
+    padding: 2rem;
+  }
+}
+
+.responsive-text {
+  font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-text {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-text {
+    font-size: 1.25rem;
+  }
+}
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 2rem;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive images */
+.responsive-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Responsive buttons */
+.responsive-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+/* Responsive cards */
+.responsive-card {
+  padding: 1.5rem;
+  margin: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-card {
+    padding: 2rem;
+    margin: 1rem;
+  }
+}
+
+/* Flexbox responsive */
+.responsive-flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .responsive-flex {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Responsive typography */
+.responsive-h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .responsive-h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.responsive-h2 {
+  font-size: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Responsive spacing */
+.responsive-section {
+  padding: 3rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-section {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-section {
+    padding: 5rem 2rem;
+  }
+}
+
+/* Responsive container */
+.responsive-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-container {
+    max-width: 640px;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .responsive-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .responsive-container {
+    max-width: 1280px;
+  }
+}
+
+/* Responsive navigation */
+.responsive-nav {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .responsive-nav {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Responsive footer */
+.responsive-footer {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .responsive-footer {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+}

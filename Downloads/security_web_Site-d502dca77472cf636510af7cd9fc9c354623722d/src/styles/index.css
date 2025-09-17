@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import responsive from './responsive.css';
+
+:root {
+  --hero-overlay: rgba(7, 43, 92, 0.55);
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.blur-card {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-soft;
+}
